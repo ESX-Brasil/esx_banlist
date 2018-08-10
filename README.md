@@ -1,5 +1,5 @@
 
-# ESX BanList.
+# ESX BanList
 
 Uma banimento de SQL que não sobrecarregue o banco de dados.
 Ele pré-carrega o banco de dados em uma tabela ao abrir o servidor ou ao adicionar / remover um ban.
@@ -53,7 +53,7 @@ ___
 
 
 ___
-# ESX BanList.
+# ESX BanList
 
 Un ban SQL qui ne surcharge pas la base de donnée.
 Il précharge la base de données dans une table lors de l'ouverture du serveur ou à l'ajout/retrait d'un ban.
