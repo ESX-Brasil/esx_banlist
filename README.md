@@ -1,52 +1,52 @@
 
 # ESX BanList.
 
-An SQL ban that does not overload the database.
-It precharges the database in a table when opening the server or adding / removing a ban.
+Uma banimento de SQL que não sobrecarregue o banco de dados.
+Ele pré-carrega o banco de dados em uma tabela ao abrir o servidor ou ao adicionar / remover um ban.
 
-# Installation
-1. Copy the project to your resource folder.
-2. Add "start FiveM-BanSql" in your `server.cfg`
+# Instalação
+1. Copie o projeto para sua pasta de recursos.
+2. Add "start esx_banlist" em seu `server.cfg`
 
-# Commands
+# Comandos
 ___
-1. **esxban:add id days reason** (	Allows ban a connected player	)
- - "id" is the player's number in the list
- - "days" must be a number to say how many days it will be ban. (0 days mean permanent)
- - "reason" Ability to register why he is banished. Attention if there is no reason the player will see: "You are banned for: unknown reason"
- - example esxban:add 3 1 Troll (Will give ban player # 3 for 1 days with Troll reason)
+1. **esxban:add id days reason** (	Permite proibir um jogador conectado	)
+ - "id" é o número do jogador na lista
+ - "days" deve ser um número para dizer quantos dias será banido. (0 dias em média permanente)
+ - "reason" Capacidade de registrar porque ele é banido. Atenção se não houver motivo para o jogador ver: "Você está banido por: razão desconhecida"
+ - exemplo esxban:add 3 1 Troll (Vai dar ban jogador #3 por 1 dia com razão Troll)
 ___
-2. **esxban:addoff days name** (	   Allows ban a offline player	  )
- - "days" must be a number to say how many days it will be ban. (0 days mean permanent)
- - "name" is the player's steam name
- - example:addoff 3 Alex Garcio (Will ask you to entry esxban:reason to continu)
-2.1 *** /esxban:reason (reason)
- - "reason" Ability to register why he is banished.
- - example esxban:reason reason (Will ban player you have entry before for X days and the reason)
+2. **esxban:addoff days name** ( Permite banir um jogador offline )
+ - "days" deve ser um número para dizer quantos dias será banido. (0 dias em média permanente)
+ - "name" é o nome da steam do jogador
+ - exemplo esxban:addoff 3 Alex Garcio (Vai pedir-lhe para entrar esxban:para continuar)
+2.1 **/esxban:reason (razão)**
+ - "reason" Capacidade de registrar porque ele foi banido.
+ - exemplo esxban:reason razão (banirá o jogador que você tem antes por X dias e o motivo)
 ___
 3. **esxban:unban "Steam Name"**
- - Deban the player matching the written name.
- - Example esxban:unban Alex Garcio (Will remove from the ban list the player)
+ - Desban o jogador que corresponde ao nome escrito.
+ - exemplo esxban:unban Alex Garcio (Removerá da lista de banimento o jogador)
 ___
-4. **esxban:load ** (reload the BanList and the BanListHistory)
-  - Can be used if you edit directly in your database.
+4. **esxban:load ** (recarregar o BanList e o BanListHistory)
+  - Pode ser usado se você editar diretamente no seu banco de dados.
 ___
-5. **esxban:history option** (Allows you to view the ban history of a player offline or online)
+5. **esxban:history option** (Permite que você visualize o histórico de banimento de um jogador off-line ou on-line)
 - "option"
-- (Name of a player) To display all the banns of a player
-- 1 To display only the first ban
-- 2 To display only the second ban
+- (Nome de um jogador) Para exibir todos os bans de um jogador
+- 1 Para exibir apenas a primeira proibição
+- 2 Para exibir apenas a segunda proibição
 - 3 ect ......
 - 4 ect ......
-- Example esxban:history Alex Garcio (Go to display all the list of player's bans)
+- exemplo esxban:history Alex Garcio (Vá para exibir toda a lista de proibições do jogador)
    
-# Required resource
+# recursos necessários
 - Async
 - Essentialmode 5.0.2+
 - Esx (Optional)
 
 
-# Created by
+# Criado por
 - Alex Garcio https://github.com/RedAlex
 - Alain Proviste https://github.com/EagleOnee
 - Renildo Marcio https://github.com/psycodeliccircus
@@ -60,7 +60,7 @@ Il précharge la base de données dans une table lors de l'ouverture du serveur 
 
 # Installation
 1. Copiez le projet dans votre dossier ressource.
-2. Ajoutez "start FiveM-BanSql" dans votre `server.cfg`
+2. Ajoutez "start esx_banlist" dans votre `server.cfg`
 
 # Commandes
 ___
